@@ -2,6 +2,14 @@
     margin: 0px;
     padding: 0px;
     }
+
+/* To prevent dragging of any image */
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
 /* For Main division, all the other divs will be under this one*/
 .mainDiv {
     margin: 0px;
