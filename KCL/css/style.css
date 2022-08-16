@@ -135,10 +135,11 @@ cursor: pointer;
 }
 
 .mainPanel .PS .BG {
-    left: 10%;
-    top: 10%;
+    left: 0%;
+    top: 0%;
     position: relative;
-    margin: 20px;
+    /* margin: 20px; */
+    z-index: 0;
 }
 
 .mainPanel .PS .Display {
@@ -154,6 +155,7 @@ cursor: pointer;
     height: 50px;
 
     position: relative; /*position*/
-    left: 0%;
-    top: 0%;
+    left: -67%;
+    bottom: 95px;
+    z-index: 1;
 }
