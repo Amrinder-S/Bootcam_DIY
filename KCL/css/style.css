@@ -3,12 +3,17 @@
     padding: 0px;
     }
 
-/* To prevent dragging of any image */
+/* To prevent dragging and selection of any image */
 img {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 /* For Main division, all the other divs will be under this one*/
 .mainDiv {
@@ -123,11 +128,32 @@ cursor: pointer;
     background-color: #6e9c70a2;
 }
 
-.mainPanel .PowerSupply {
-    float: left;
+.mainPanel .PS {
+    background-color: #04AA6D;
+    width: fit-content;
     height: auto;
-    width: auto;
+}
+
+.mainPanel .PS .BG {
+    left: 10%;
+    top: 10%;
     position: relative;
-    left: 5%;
-    top: 5%;
+    margin: 20px;
+}
+
+.mainPanel .PS .Display {
+    background-color: rgba(24, 22, 22, 0.897); /*style*/
+    color: red;
+    text-align: center;
+    font-family: 'Seven Segment';
+    font-weight: bold;
+    border: inset;
+    font-size: 40px;
+
+    width: 95px; /*size*/
+    height: 50px;
+
+    position: relative; /*position*/
+    left: 0%;
+    top: 0%;
 }
